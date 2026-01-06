@@ -55,7 +55,7 @@ jobs:
         make -j$(nproc --all) bacon
 
     - name: Upload Build
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: lineageos
         path: ~/android/lineage/out/target/product/a22x/*.zip
